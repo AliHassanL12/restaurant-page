@@ -1,1 +1,1 @@
-console.log('works very very well ')
+import './page-load.js'
