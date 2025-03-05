@@ -3,7 +3,7 @@ const content = document.querySelector('#content');
 const header = document.createElement('header');
 const nav = document.createElement('nav');
 
-content.appendChild(header);
+document.body.appendChild(header);
 header.appendChild(nav);
 
 const homeButton = document.createElement('button');
