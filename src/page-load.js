@@ -1,7 +1,8 @@
 import restaurantImage from '../images/restaurant-photo.jpg';
+import '../css/styles.css'
 
 const content = document.querySelector('#content');
-const header = document.createElement('header');
+const header = document.createElement('h1');
 const image = document.createElement('img');
 image.src = restaurantImage;
 header.textContent = 'A Culinary Gem: Where Every Bite Feels Like Perfection';
