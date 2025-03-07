@@ -1,4 +1,6 @@
-import {loadHomePage} from './page-load.js'
+import {loadHomePage} from './page-load.js';
+import { loadContactPage } from './about-page.js';
+import '../css/styles.css'
 
 loadHomePage();
 
@@ -15,12 +17,20 @@ function loadPage(e) {
         case 'Home':
             openHomePage();
             break;
+        case 'Contact Us':
+            openContactPage();
+            break;
     } 
 }
 
 function openHomePage() {
     removeContentChildren();
     loadHomePage();
+}
+
+function openContactPage() {
+    removeContentChildren();
+    loadContactPage();
 }
 
 function removeContentChildren() {
