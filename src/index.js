@@ -1,4 +1,4 @@
-import {loadHomePage} from './page-load.js';
+import { loadHomePage } from './page-load.js';
 import { loadContactPage } from './about-page.js';
 import '../css/styles.css'
 

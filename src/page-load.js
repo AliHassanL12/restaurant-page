@@ -1,4 +1,3 @@
-import '../css/styles.css'
 
 
 export function loadHomePage() {
