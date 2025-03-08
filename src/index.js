@@ -1,5 +1,6 @@
 import { loadHomePage } from './page-load.js';
-import { loadContactPage } from './about-page.js';
+import { loadContactPage } from './contact-page.js';
+import { loadMenuPage } from './menu-page.js';
 import '../css/styles.css'
 
 loadHomePage();
@@ -12,26 +13,21 @@ buttons.forEach((button) => {
 })
 
 function loadPage(e) {
-    const targetButton = e.target
+    removeContentChildren();
+    const targetButton = e.target;
     switch(targetButton.textContent) {
         case 'Home':
-            openHomePage();
+            loadHomePage();
+            break;
+        case 'Menu':
+            loadMenuPage();
             break;
         case 'Contact Us':
-            openContactPage();
+            loadContactPage();
             break;
     } 
 }
 
-function openHomePage() {
-    removeContentChildren();
-    loadHomePage();
-}
-
-function openContactPage() {
-    removeContentChildren();
-    loadContactPage();
-}
 
 function removeContentChildren() {
     const content = document.querySelector('#content');
