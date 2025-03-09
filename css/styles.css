@@ -47,8 +47,11 @@ body,
 .hoursDiv {
     margin-top: 30px;
     border: 1px solid black;
-    width: 400px;
-    height: 200px;
+    min-width: 400px;
+    min-height: 250px;
     padding: 10px;
 }
 
+.hoursParagraph {
+    white-space: pre-line;
+}

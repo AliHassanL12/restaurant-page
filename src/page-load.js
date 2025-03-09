@@ -22,5 +22,9 @@ export function loadHomePage() {
 
     // create open hours content
     const hoursParagraph = document.createElement('p');
+    hoursParagraph.classList.add('hoursParagraph');
+    hoursParagraph.textContent = 'Monday: 9:00 - 15:00\nTuesday: 9:00 - 15:00\nWednesday: 9:00 - 16:00\nThursday: 9:00 - 16:00\nFriday: 9:00 - 18:00\nSaturday: Closed\nSunday: Closed';
+    console.log(hoursParagraph.textContent)
+    headerDiv.appendChild(hoursParagraph);
 }
 
