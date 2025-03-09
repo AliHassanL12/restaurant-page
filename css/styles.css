@@ -38,7 +38,7 @@ body,
 #content,
 .hoursDiv,
 .locationDivContainer,
-.beverages {
+.item {
     border-radius: 14px;
 }
 
@@ -54,7 +54,7 @@ body,
 
 .locationDivContainer, 
 .hoursDiv,
-.beverages {
+.item {
     border: 1px solid black;
     padding: 10px;
 }
@@ -68,13 +68,13 @@ body,
     white-space: pre-line;
 }
 
-.beverages {
+.item {
     max-width: 400px;
     min-height: 200px;
     margin-bottom: 10px;
 }
 
-.beverageContent {
+.itemContent {
     margin-left: 20px;
 }
 
