@@ -36,7 +36,8 @@ body,
 }
 
 #content,
-.hoursDiv {
+.hoursDiv,
+.locationDivContainer {
     border-radius: 14px;
 }
 
@@ -46,10 +47,19 @@ body,
 
 .hoursDiv {
     margin-top: 30px;
-    border: 1px solid black;
     min-width: 400px;
     min-height: 250px;
+}
+
+.locationDivContainer, 
+.hoursDiv {
+    border: 1px solid black;
     padding: 10px;
+}
+.locationDivContainer {
+    margin-top: 10px;
+    max-width: 400px;
+    max-height: 125px;
 }
 
 .hoursParagraph {
