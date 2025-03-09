@@ -37,7 +37,8 @@ body,
 
 #content,
 .hoursDiv,
-.locationDivContainer {
+.locationDivContainer,
+.beverages {
     border-radius: 14px;
 }
 
@@ -52,7 +53,8 @@ body,
 }
 
 .locationDivContainer, 
-.hoursDiv {
+.hoursDiv,
+.beverages {
     border: 1px solid black;
     padding: 10px;
 }
@@ -64,4 +66,14 @@ body,
 
 .hoursParagraph {
     white-space: pre-line;
+}
+
+.beverages {
+    max-width: 400px;
+    min-height: 200px;
+    margin-bottom: 10px;
+}
+
+.beverageContent {
+    margin-left: 20px;
 }
