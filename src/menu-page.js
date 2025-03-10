@@ -1,6 +1,15 @@
 export function loadMenuPage() {
     createMainContent();
+    createSectionHeader('Beverages');
     generateDrinks();
+    createSectionHeader('Main Dishes');
+    generateMainDishes();
+}
+
+function generateMainDishes() {
+    createItem('Mango Lassi', 'A refreshing and creamy yogurt-based drink made with ripe mangoes, yogurt, sugar, and a touch of cardamom. It’s a popular beverage in South Asian cuisine, perfect for cooling down on a hot day.', '£8')
+    createItem('Shakshuka', 'A vibrant North African and Middle Eastern dish made with poached eggs in a rich, spiced tomato sauce with onions, peppers, and garlic. It\'s often served with warm crusty bread for dipping, making it a flavorful and hearty meal.', '£12')
+    createItem('Beef Wellington', 'A luxurious British dish consisting of tender beef fillet coated with mushroom duxelles and pâté, then wrapped in puff pastry and baked until golden', '£25')
 }
 
 function generateDrinks() {
@@ -33,13 +42,17 @@ function createItem(drinkName, drinkDescription, dishPrice) {
 
 }
 
+function createSectionHeader(title) {
+    const content = document.querySelector('#content');
+    const header = document.createElement('h2');
+    header.textContent = title;
+    content.appendChild(header);
+}
+
 function createMainContent() {
     const content = document.querySelector('#content');
     const header = document.createElement('h1');
     header.textContent = 'Menu';
-    const subHeader = document.createElement('h2');
-    subHeader.textContent = 'Beverages';
     content.appendChild(header);
-    content.appendChild(subHeader);
 }
 
