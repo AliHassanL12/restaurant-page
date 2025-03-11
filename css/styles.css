@@ -60,11 +60,13 @@ body,
     max-height: 125px;
 }
 
-.hoursParagraph {
+.hoursParagraph,
+.itemContent {
     white-space: pre-line;
 }
 
 .item {
+    min-width: 400px;
     max-width: 400px;
     min-height: 200px;
     margin-bottom: 10px;
