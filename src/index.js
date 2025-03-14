@@ -5,7 +5,6 @@ import '../css/styles.css'
 
 loadHomePage();
 
-
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
